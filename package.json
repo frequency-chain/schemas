@@ -1,0 +1,28 @@
+{
+  "name": "frequency-schemas",
+  "version": "1.0.0",
+  "description": "Generic Schemas for the Frequency Chain",
+  "type": "module",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "vitest",
+    "deploy": "node deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frequency-chain/schemas.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/frequency-chain/schemas/issues"
+  },
+  "homepage": "https://github.com/frequency-chain/schemas#readme",
+  "dependencies": {
+    "@polkadot/api": "^11.2.1",
+    "avro-js": "^1.11.3"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}
