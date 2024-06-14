@@ -4,6 +4,21 @@ Some generic schemas for improving the usability of Frequency
 
 ## Schemas
 
+### Default Token Address
+
+- Goal: Allow MSAs to list their default token sending and receiving addresses, both from Frequency and other chains
+- Payload Location Options
+    - Itemized: Each piece of data is atomic
+    - Signature Required: Creating or removing connecting addresses should require user sign-off
+
+#### Data
+
+- Address: String form of the token address for the specific chain
+- Token: SLIP-0044 Chain Identifier
+
+#### References
+
+- [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
 
 ## Use to Deploy Schemas
 
