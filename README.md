@@ -2,6 +2,26 @@
 
 Some generic schemas for improving the usability of Frequency
 
+## Schemas
+
+### Wallet Addresses
+
+- Goal: Allow MSAs to list their wallet addresses, both from Frequency and other chains
+- Payload Location Options
+    - OnChain / IPFS: No. This is user-centric data that needs to be discovered via an MSA Id
+    - Paginated: Likely? The data is one "page" of data not individual atoms
+    - Itemized: Possible. We could structure the data as a list instead of a page. Then this makes more sense, but is perhaps harder to ensure it is up to date due to less cleanup
+
+#### Data
+
+- Chain Information
+    - Chain Link Id?
+    - Genesis Hash?
+
+#### References
+
+- https://chainlist.org
+
 ## Use to Deploy Schemas
 
 ### Setup

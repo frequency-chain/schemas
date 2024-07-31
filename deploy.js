@@ -6,10 +6,9 @@ export const GENESIS_HASH_MAINNET = "0x4a587bf17a404e3572747add7aab7bbe56e805a54
 
 // DEPLOY_SCHEMA_ENDPOINT_URL (environment variable)
 // The value is a URL for the RPC endpoint.  e.g. ws://localhost:9944
-export function getFrequencyAPI() {
+export function getChainApi() {
   const DefaultWsProvider = new WsProvider(getEndpoint());
 
-  // The "options" parameter pulls in the Frequency API extrinsics
   return ApiPromise.create({
     provider: DefaultWsProvider,
     throwOnConnect: true,
@@ -91,7 +90,7 @@ const eventWithSectionAndMethod = (events, section, method) => {
 // Given a list of schema names, attempt to create them with the chain.
 const createSchemas = async (schemaNames) => {
   const promises = [];
-  const api = await getFrequencyAPI();
+  const api = await getChainApi();
   const signerAccountKeys = getSignerAccountKeys();
   // Mainnet genesis hash means we should propose instead of create
   const shouldPropose = api.genesisHash.toHex() === GENESIS_HASH_MAINNET;
