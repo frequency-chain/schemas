@@ -6,7 +6,7 @@ export const schemas = new Map([
     {
       model: walletAddresses,
       modelType: "AvroBinary",
-      payloadLocation: "Paginated",
+      payloadLocation: "Itemized",
       settings: ["SignatureRequired"],
     },
   ],
