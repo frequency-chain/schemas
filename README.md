@@ -8,19 +8,17 @@ Some generic schemas for improving the usability of Frequency
 
 - Goal: Allow MSAs to list their wallet addresses, both from Frequency and other chains
 - Payload Location Options
-    - OnChain / IPFS: No. This is user-centric data that needs to be discovered via an MSA Id
-    - Paginated: Likely? The data is one "page" of data not individual atoms
-    - Itemized: Possible. We could structure the data as a list instead of a page. Then this makes more sense, but is perhaps harder to ensure it is up to date due to less cleanup
+    - Itemized: Each piece of data is atomic
+    - Signature Required: Creating or removing connecting addresses should require user sign-off
 
 #### Data
 
-- Chain Information
-    - Chain Link Id?
-    - Genesis Hash?
+- Wallet Address: String form for the specific chain
+- Coin Type: SLIP-0044 Chain Identifier
 
 #### References
 
-- https://chainlist.org
+- [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
 
 ## Use to Deploy Schemas
 
