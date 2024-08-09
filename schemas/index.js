@@ -1,10 +1,10 @@
-import * as walletAddresses from "./walletAddresses.js";
+import * as paymentAddress from "./paymentAddress.js";
 
 export const schemas = new Map([
   [
-    "walletAddresses",
+    "paymentAddress",
     {
-      model: walletAddresses,
+      model: paymentAddress,
       modelType: "AvroBinary",
       payloadLocation: "Itemized",
       settings: ["SignatureRequired"],

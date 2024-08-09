@@ -1,14 +1,14 @@
 import { expect, test, it } from "vitest";
 import avro from "avsc";
-import walletAddresses from "./walletAddresses.js";
+import paymentAddresses from "./paymentAddress.js";
 
-test("Wallet Addresses Schema is Avro", () => {
-  const schema = avro.Type.forSchema(walletAddresses);
+test("Payment Addresses Schema is Avro", () => {
+  const schema = avro.Type.forSchema(paymentAddresses);
   expect(schema).toBeDefined();
 });
 
-test("Wallet Addresses Schema can take the correct data", () => {
-  const schema = avro.Type.forSchema(walletAddresses);
+test("Payment Addresses Schema can take the correct data", () => {
+  const schema = avro.Type.forSchema(paymentAddresses);
   const dot = schema.toBuffer({
     coin_type: 354,
     address: "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",

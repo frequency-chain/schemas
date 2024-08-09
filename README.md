@@ -4,9 +4,9 @@ Some generic schemas for improving the usability of Frequency
 
 ## Schemas
 
-### Wallet Addresses
+### Payment Addresses
 
-- Goal: Allow MSAs to list their wallet addresses, both from Frequency and other chains
+- Goal: Allow MSAs to list their payment addresses, both from Frequency and other chains
 - Payload Location Options
     - Itemized: Each piece of data is atomic
     - Signature Required: Creating or removing connecting addresses should require user sign-off
