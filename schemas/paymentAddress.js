@@ -5,7 +5,7 @@
  */
 export default {
   type: "record",
-  name: "Payment Address",
+  name: "PaymentAddress",
   namespace: "xyz.frequency",
   fields: [
     {
