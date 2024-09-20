@@ -4,17 +4,17 @@ Some generic schemas for improving the usability of Frequency
 
 ## Schemas
 
-### Payment Addresses
+### Default Token Address
 
-- Goal: Allow MSAs to list their payment addresses, both from Frequency and other chains
+- Goal: Allow MSAs to list their default token sending and receiving addresses, both from Frequency and other chains
 - Payload Location Options
     - Itemized: Each piece of data is atomic
     - Signature Required: Creating or removing connecting addresses should require user sign-off
 
 #### Data
 
-- Wallet Address: String form for the specific chain
-- Coin Type: SLIP-0044 Chain Identifier
+- Address: String form of the token address for the specific chain
+- Token: SLIP-0044 Chain Identifier
 
 #### References
 
@@ -52,9 +52,9 @@ DEPLOY_SCHEMA_ACCOUNT_URI="//Bob" DEPLOY_SCHEMA_ENDPOINT_URL="ws://127.0.0.1:994
 
 ### To register a single schema
 
-e.g. To register the "walletAddresses" schema
+e.g. To register the "defaultTokenAddress" schema
 
-    npm run deploy walletAddresses
+    npm run deploy defaultTokenAddress
 
 **Note:** Requires a sudo key if deploying to a testnet.
 Mainnet will use the proposal system (`proposeToCreateSchema`).

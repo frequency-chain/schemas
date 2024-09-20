@@ -1,10 +1,10 @@
-import * as paymentAddress from "./paymentAddress.js";
+import * as defaultTokenAddress from "./defaultTokenAddress.js";
 
 export const schemas = new Map([
   [
-    "paymentAddress",
+    "defaultTokenAddress",
     {
-      model: paymentAddress,
+      model: defaultTokenAddress,
       modelType: "AvroBinary",
       payloadLocation: "Itemized",
       settings: ["SignatureRequired"],
