@@ -6,7 +6,7 @@
 export default {
   type: "record",
   name: "PaymentAddress",
-  namespace: "xyz.frequency",
+  namespace: "frequency",
   fields: [
     {
       name: "coin_type_slip_0044",
