@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: ["**"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+          cache-dependency-path: package-lock.json
+
+      - name: Install 💾
+        run: npm ci
+
+      - name: Test
+        run: npm run test -- --run
