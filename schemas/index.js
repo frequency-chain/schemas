@@ -2,7 +2,7 @@ import * as defaultTokenAddress from "./defaultTokenAddress.js";
 
 export const schemas = new Map([
   [
-    "defaultTokenAddress",
+    "default-token-address",
     {
       model: defaultTokenAddress,
       modelType: "AvroBinary",
