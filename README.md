@@ -52,9 +52,9 @@ DEPLOY_SCHEMA_ACCOUNT_URI="//Bob" DEPLOY_SCHEMA_ENDPOINT_URL="ws://127.0.0.1:994
 
 ### To register a single schema
 
-e.g. To register the "defaultTokenAddress" schema
+e.g. To register the "default-token-address" schema
 
-    npm run deploy defaultTokenAddress
+    npm run deploy default-token-address
 
 **Note:** Requires a sudo key if deploying to a testnet.
 Mainnet will use the proposal system (`proposeToCreateSchema`).
