@@ -6,6 +6,8 @@ Some generic schemas for improving the usability of Frequency
 
 ### Default Token Address
 
+- Mainnet Schema Name: `frequency.default-token-address`
+- Mainnet Schema Id: 21
 - Goal: Allow MSAs to list their default token sending and receiving addresses, both from Frequency and other chains
 - Payload Location Options
     - Itemized: Each piece of data is atomic
